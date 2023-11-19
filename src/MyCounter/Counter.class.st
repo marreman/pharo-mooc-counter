@@ -45,3 +45,12 @@ Counter >> initialize [
 	super initialize.
 	count := 0.
 ]
+
+{ #category : #printing }
+Counter >> printOn: aStream [
+	super printOn: aStream.
+	aStream
+		nextPutAll: ' withValue: ';
+		print: count;
+		cr
+]

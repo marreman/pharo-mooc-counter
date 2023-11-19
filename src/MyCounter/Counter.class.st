@@ -29,3 +29,8 @@ Counter >> decrement [
 Counter >> increment [
 	count := count + 1
 ]
+
+{ #category : #modifying }
+Counter >> increment2 [
+	count := count + 2
+]

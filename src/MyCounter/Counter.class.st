@@ -11,6 +11,11 @@ Class {
 }
 
 { #category : #accessing }
+Counter class >> startingAt: anInteger [
+	^ self new count: anInteger
+]
+
+{ #category : #accessing }
 Counter >> count [
 	^ count
 ]
@@ -33,4 +38,10 @@ Counter >> increment [
 { #category : #modifying }
 Counter >> increment2 [
 	count := count + 2
+]
+
+{ #category : #initialization }
+Counter >> initialize [
+	super initialize.
+	count := 0.
 ]
